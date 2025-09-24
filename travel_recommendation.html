@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TravelSoon</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="home">
+  <!-- Navbar (with search) -->
+  <nav class="navbar">
+    <div class="brand">
+      <a href="travel_recommendation.html" class="logo">🌍 TravelSoon</a>
+    </div>
+    <ul class="menu">
+      <li><a class="active" href="travel_recommendation.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+
+    <form class="searchbar" id="searchForm">
+      <input id="searchInput" type="text" placeholder="Search: beach, temple, or country…" aria-label="Search recommendations"/>
+      <button id="searchBtn" type="submit">Search</button>
+      <button id="resetBtn" type="button" class="secondary">Reset</button>
+    </form>
+  </nav>
+
+  <!-- Hero / Intro -->
+  <header class="hero">
+    <div class="overlay">
+      <h1>Find your next adventure</h1>
+      <p>Type <strong>beach</strong>, <strong>temple</strong>, or a <strong>country</strong> to discover beautiful places.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">📸</a>
+        <a href="#" aria-label="Twitter / X">🕊️</a>
+        <a href="#" aria-label="YouTube">▶️</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Results -->
+  <main class="container">
+    <section id="results" class="card-grid" aria-live="polite"></section>
+  </main>
+
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>

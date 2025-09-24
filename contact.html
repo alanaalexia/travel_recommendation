@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TravelSoon — Contact Us</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- Navbar (no search here) -->
+  <nav class="navbar">
+    <div class="brand">
+      <a href="travel_recommendation.html" class="logo">🌍 TravelSoon</a>
+    </div>
+    <ul class="menu">
+      <li><a href="travel_recommendation.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a class="active" href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main class="container narrow">
+    <section class="prose">
+      <h1>Contact Us</h1>
+      <p>Have a question or suggestion? Send us a message.</p>
+
+      <form class="contact-form" id="contactForm" action="#" method="post" novalidate>
+        <label>
+          Name
+          <input type="text" name="name" required placeholder="Your name"/>
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required placeholder="you@example.com"/>
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" rows="6" required placeholder="Write your message here..."></textarea>
+        </label>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    // Simple demo handler
+    document.getElementById('contactForm')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thanks! Your message has been “sent”. (Demo)');
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>
